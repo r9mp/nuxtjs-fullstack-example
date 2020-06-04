@@ -150,3 +150,12 @@ $ sudo yarn global add pm2 --prefix /usr/local
 PM2 config file for this project is `ecosystem.config.js`. It is based on [this great tutorial from Xander Luciano](https://medium.com/@vipercodegames/nuxt-deploy-809eda0168fc) made for Nuxt 1.x (just a little difference with Nuxt 2.x). Don't hesitate to have a look and inspire yourself with the deployment strategy!
 
 More information about the ecosystem file [here](https://pm2.keymetrics.io/docs/usage/application-declaration/#ecosystem-file).
+
+## Awesome repositories
+
+To find nice dependencies, don't forget to check these repositories:
+- [Awesome Nuxt.js](https://github.com/nuxt-community/awesome-nuxt): a curated list of awesome things related to Nuxt.js.
+- [Nuxt Community](https://github.com/nuxt-community/): modules & Projects from Nuxt.js Community.
+- [Awesome Vue.js](https://github.com/vuejs/awesome-vue): a curated list of awesome things related to Vue.js.
+- [Awesome Express](https://github.com/rajikaimal/awesome-express): a curated list of express.js resources.
+- [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs): delightful Node.js packages and resources.
