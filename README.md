@@ -128,6 +128,18 @@ Tests:
 
 Dev dependencies:
 
+## Dependencies configuration
+
+### robots.txt
+
+Two possible configurations are implemented in this repo: with the robots.txt module and with static files.
+
+Static files config: all included files are automatically served by Nuxt and are accessible through your project root URL. (static/robots.txt will be available at localhost:3000/robots.txt).
+
+[Nuxt Robots.txt module](https://github.com/nuxt-community/robots-module): inject a middleware to generate a robots.txt file. The JS translation of static/robots.txt file is available in config/modules/robots.js.
+
+In both cases, if you do not use a sitemap, don't forget to remove it from the robots.txt.
+
 ## Deployment
 
 ### Google Cloud Platform - App Engine

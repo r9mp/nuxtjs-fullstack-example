@@ -1,5 +1,5 @@
 import toast from './toast'
-import robots from './robots'
+// import robots from './robots'
 
 /*
  * Modules configuration
@@ -19,6 +19,6 @@ export default [
   ['@nuxtjs/toast', toast],
   // https://github.com/nuxt-community/nuxt-i18n
   'nuxt-i18n',
-  ['@nuxtjs/robots', robots],
+  // ['@nuxtjs/robots', robots],
   '@nuxtjs/sitemap',
 ]
