@@ -20,6 +20,25 @@ Don't start your projects from it, prefer [create-nuxt-app](https://nuxtjs.org/g
 
 ## Build Setup
 
+### Add an env file
+
+This repository uses .env files for configuration. Copy paste the following lines in a file named `.env` in the root directory.
+
+```dotenv
+BASE_URL=http://fullstack-example.nuxtjs.com:3333
+
+# DB setting
+DB_CLIENT=postgresql
+DB_NAME=llama
+DB_USER=llama
+DB_PASSWORD=llama
+
+# Auth0
+AUTH0_DOMAIN=# Example: nuxt-js.eu.auth0.com
+AUTH0_CLIENT_ID=# Example: gI6lVM0y2HqwgBI5ujO9YmGyt4y3yPhU
+AUTH0_AUDIENCE=# Example: https://nuxt-js.eu.auth0.com/api/v2/
+```
+
 ### Auth0
 
 First, create a tenant at [Auth0](https://auth0.com/). Then, create an application (Regular Web Application) and specify AUTH_* environment variables in .env file.
@@ -142,16 +161,9 @@ In both cases, if you do not use a sitemap, don't forget to remove it from the r
 
 ## Deployment
 
-### Google Cloud Platform - App Engine
+You can find in Nuxt.js FAQ [lot's of deployments methods](https://nuxtjs.org/faq/deployment-aws-s3-cloudfront). Some of them are for generated apps.
 
-
-### Google Cloud Patform - Container Engine
-
-
-### Amazon Web Services
-
-
-### PM2
+### PM2 - Deploy on your server/VM!
 PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks. [More information!](https://github.com/Unitech/pm2)
 
 ```bash
@@ -162,6 +174,20 @@ $ sudo yarn global add pm2 --prefix /usr/local
 PM2 config file for this project is `ecosystem.config.js`. It is based on [this great tutorial from Xander Luciano](https://medium.com/@vipercodegames/nuxt-deploy-809eda0168fc) made for Nuxt 1.x (just a little difference with Nuxt 2.x). Don't hesitate to have a look and inspire yourself with the deployment strategy!
 
 More information about the ecosystem file [here](https://pm2.keymetrics.io/docs/usage/application-declaration/#ecosystem-file).
+
+### Google Cloud Platform - App Engine
+
+Copy / Paste the `deploy-app-engine.yaml` configuration file in your repository.
+
+Deploy it: `gcloud app deploy deploy-app-engine  --project [project-id]`
+
+[More information (Nuxt)](https://nuxtjs.org/faq/appengine-deployment).
+
+### Google Cloud Platform - Container Engine
+
+TODO: yaml service 
+
+With and without Nginx as reverse proxy -> https://nuxtjs.org/faq/nginx-proxy
 
 ## Awesome repositories
 

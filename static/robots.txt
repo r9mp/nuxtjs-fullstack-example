@@ -1,5 +1,5 @@
 #
-# robots.txt for https://www.stupid-lama.com
+# robots.txt for https://fullstack-example.nuxtjs.com
 #
 
 User-agent: UbiCrawler
@@ -84,4 +84,4 @@ User-agent: WebReaper
 Disallow: /
 
 User-agent: *
-Sitemap: https://www.stupid-lama.com/sitemap.xml
+Sitemap: https://fullstack-example.nuxtjs.com/sitemap.xml

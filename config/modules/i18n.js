@@ -20,7 +20,7 @@ export default {
   langDir: 'locales/',
   defaultLocale: 'fr',
   seo: false, // SEO is enabled through layouts: layouts/*.vue
-  baseUrl: 'https://www-local.stupid-lama.com',
+  baseUrl: 'https://fullstack-example.nuxtjs.com',
   strategy: 'prefix_except_default',
   parsePages: false,
   pages: {
