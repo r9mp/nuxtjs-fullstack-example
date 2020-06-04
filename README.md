@@ -87,7 +87,7 @@ If you want to change the local dns name, don't forget to edit BASE_URL environm
 
 ```bash
 # install dependencies
-$ yarn install
+$ yarn
 
 # serve with hot reload at localhost:3333
 $ yarn dev
@@ -127,3 +127,26 @@ Tests:
 - [Jest - UT](https://jestjs.io/)
 
 Dev dependencies:
+
+## Deployment
+
+### Google Cloud Platform - App Engine
+
+
+### Google Cloud Patform - Container Engine
+
+
+### Amazon Web Services
+
+
+### PM2
+PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks. [More information!](https://github.com/Unitech/pm2)
+
+```bash
+# install pm2 globaly
+$ sudo yarn global add pm2 --prefix /usr/local
+```
+
+PM2 config file for this project is `ecosystem.config.js`. It is based on [this great tutorial from Xander Luciano](https://medium.com/@vipercodegames/nuxt-deploy-809eda0168fc) made for Nuxt 1.x (just a little difference with Nuxt 2.x). Don't hesitate to have a look and inspire yourself with the deployment strategy!
+
+More information about the ecosystem file [here](https://pm2.keymetrics.io/docs/usage/application-declaration/#ecosystem-file).
