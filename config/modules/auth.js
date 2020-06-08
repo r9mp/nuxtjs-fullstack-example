@@ -2,6 +2,8 @@
  * https://auth.nuxtjs.org/api/options.html#token
  */
 
+require('dotenv').config()
+
 export default {
   strategies: {
     auth0: {

@@ -5,6 +5,8 @@
 export default [
   // https://github.com/nuxt-community/eslint-module
   '@nuxtjs/eslint-module',
+  // https://github.com/nuxt-community/style-resources-module/
+  '@nuxtjs/style-resources',
   // https://github.com/nuxt-community/moment-module
   [
     '@nuxtjs/moment',

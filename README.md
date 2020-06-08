@@ -36,6 +36,7 @@ DB_PASSWORD=llama
 # Auth0
 AUTH0_DOMAIN=# Example: nuxt-js.eu.auth0.com
 AUTH0_CLIENT_ID=# Example: gI6lVM0y2HqwgBI5ujO9YmGyt4y3yPhU
+AUTH0_CLIENT_SECRET=# Example: MQGn-6f2v6_JNGu787ssE2aDkQfXxc5WleNg9b-FdcasA8hGZlhoI6-_MYIljOmv
 AUTH0_AUDIENCE=# Example: https://nuxt-js.eu.auth0.com/api/v2/
 ```
 
@@ -134,18 +135,21 @@ Front-end:
 - [Vue Cookie Law module](https://github.com/apertureless/vue-cookie-law): EU Cookie Law Plugin for Vue.js.
 - [Vue lazyloading module](https://github.com/hilongjw/vue-lazyload): vue module for lazyloading images in your applications.
 - [Vue loadash module](https://github.com/Ewocker/vue-lodash): a small wrapper for integrating lodash to Vuejs.
+- [Nuxt Style Resources module](https://github.com/nuxt-community/style-resources-module/): share variables, mixins, functions across all style files (no @import needed).
+- [sass-loader](https://webpack.js.org/loaders/sass-loader/): loads a Sass/SCSS file and compiles it to CSS.
+- [node-sass](https://github.com/sass/node-sass): node.js bindings to libsass.
 
 Back-end:
-- [Express.js](https://expressjs.com/)
-- [Express CORS middleware](https://expressjs.com/en/resources/middleware/cors.html)
-- [Knex.js - Query Builder](http://knexjs.org/)
-- [Objection.js - ORM](https://vincit.github.io/objection.js/)
+- [Express.js](https://expressjs.com/): fast, unopinionated, minimalist web framework for Node.js.
+- [Express CORS middleware](https://expressjs.com/en/resources/middleware/cors.html): enables CORS.
+- [Knex.js](http://knexjs.org/): query builder.
+- [Objection.js](https://vincit.github.io/objection.js/): ORM.
+- [Hapi - Joy](https://hapi.dev/module/joi/): data validation.
 
 Tests:
 - [Cypress - E2E](https://www.cypress.io/)
 - [Jest - UT](https://jestjs.io/)
 
-Dev dependencies:
 
 ## Dependencies configuration
 
@@ -197,3 +201,18 @@ To find nice dependencies, don't forget to check these repositories:
 - [Awesome Vue.js](https://github.com/vuejs/awesome-vue): a curated list of awesome things related to Vue.js.
 - [Awesome Express](https://github.com/rajikaimal/awesome-express): a curated list of express.js resources.
 - [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs): delightful Node.js packages and resources.
+
+## Inspired by
+
+[Express + Knex + Objection = Painless API with DB](https://itnext.io/express-knex-objection-painless-api-with-db-74512c484f0c), Nicola Dall'Asen
+
+[Bulletproof node.js project architecture](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf), Sam Quinn
+
+And lot's others!
+
+
+## License
+
+[MIT License](https://github.com/r9mp/nuxtjs-fullstack-example/blob/master/LICENSE)
+
+Copyright (c) Romain POUSSIER

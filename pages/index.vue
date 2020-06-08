@@ -2,36 +2,38 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        template
-      </h1>
-      <h2 class="subtitle">
-        Lamas can learn. Be a lama.
-      </h2>
+      <h1 class="title">{{ $t('index.title') }}</h1>
+      <h2 class="subtitle">{{ $t('index.subtitle') }}</h2>
+      <div class="link">
+        <nuxt-link :to="localePath('dashboard')">
+          <Button type="primary">{{ $t('index.goToDashboard') }}</Button>
+        </nuxt-link>
+      </div>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
+        <a href="https://nuxtjs.org/" target="_blank">
+          <Button class="button--green">{{ $t('index.documentation') }}</Button>
         </a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">
-          GitHub
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank">
+          <Button class="button--grey">{{ $t('index.github') }}</Button>
         </a>
-        <nuxt-link to="test">Internal Link</nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Button } from 'ant-design-vue'
 import Logo from '../components/Logo.vue'
 
 export default {
   components: {
     Logo,
+    Button,
   },
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -39,16 +41,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
 }
 
 .subtitle {

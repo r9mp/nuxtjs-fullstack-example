@@ -18,7 +18,7 @@ export default {
   ],
   lazy: true,
   langDir: 'locales/',
-  defaultLocale: 'fr',
+  defaultLocale: 'en',
   seo: false, // SEO is enabled through layouts: layouts/*.vue
   baseUrl: 'https://fullstack-example.nuxtjs.com',
   strategy: 'prefix_except_default',
@@ -27,6 +27,10 @@ export default {
     'errors/404': {
       en: '/errors/404',
       fr: '/erreurs/404',
+    },
+    'dashboard/index': {
+      en: '/dashboard',
+      fr: '/dashboard',
     },
   },
 }

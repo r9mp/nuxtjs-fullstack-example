@@ -6,6 +6,7 @@ import { head } from './config/head'
 import loading from './config/loading'
 import plugins from './config/plugins'
 import css from './config/css'
+import styleResources from './config/styleResources'
 import modules from './config/modules'
 import buildModules from './config/buildModules'
 import axios from './config/axios'
@@ -27,6 +28,7 @@ export default {
   head,
   loading,
   css,
+  styleResources,
   plugins,
   buildModules,
   modules,

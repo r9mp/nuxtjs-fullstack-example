@@ -4,7 +4,7 @@
  */
 
 export const head = {
-  title: "Vidéos d'actualité et de vulgarisation - Stupid Lama",
+  title: 'Fullstack Example - Nuxt.js',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },

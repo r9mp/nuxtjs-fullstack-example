@@ -13,7 +13,7 @@ app.use(users)
 app.use((err, req, res, next) => {
   console.log('ERREUR, ', err)
   if (err.name === 'UnauthorizedError') {
-    // res.send(401, 'Invalid token.')
+    res.send(401, 'Invalid token.')
   }
 })
 

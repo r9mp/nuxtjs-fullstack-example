@@ -7,7 +7,6 @@ export default {
   name: 'AuthLogin',
   layout: 'default',
   mounted() {
-    console.log('LOOOL')
     this.$auth.loginWith('auth0')
   },
 }
