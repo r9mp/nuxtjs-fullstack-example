@@ -1,45 +1,40 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">{{ $t('index.title') }}</h1>
-      <h2 class="subtitle">{{ $t('index.subtitle') }}</h2>
-      <div class="link">
-        <nuxt-link :to="localePath('dashboard')">
-          <Button type="primary">{{ $t('index.goToDashboard') }}</Button>
-        </nuxt-link>
-      </div>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank">
-          <Button class="button--green">{{ $t('index.documentation') }}</Button>
-        </a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank">
-          <Button class="button--grey">{{ $t('index.github') }}</Button>
-        </a>
-      </div>
+  <div class="page-content">
+    <logo />
+    <h1 class="title">{{ $t('index.title') }}</h1>
+    <h2 class="subtitle">{{ $t('index.subtitle') }}</h2>
+    <div class="link">
+      <a href="https://github.com/r9mp/nuxtjs-fullstack-example/blob/master/README.md" target="_blank">
+        <a-button type="primary">{{ $t('index.fullstackExample.documentation') }}</a-button>
+      </a>
+      <a href="https://github.com/r9mp/nuxtjs-fullstack-example" target="_blank">
+        <a-button type="primary">{{ $t('index.fullstackExample.github') }}</a-button>
+      </a>
+    </div>
+    <div class="links">
+      <a href="https://nuxtjs.org/" target="_blank">
+        <a-button class="button--green">{{ $t('index.nuxtjs.documentation') }}</a-button>
+      </a>
+      <a href="https://github.com/nuxt/nuxt.js" target="_blank">
+        <a-button class="button--grey">{{ $t('index.nuxtjs.github') }}</a-button>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-import { Button } from 'ant-design-vue'
 import Logo from '../components/Logo.vue'
 
 export default {
   components: {
     Logo,
-    Button,
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.container {
+.page-content {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 

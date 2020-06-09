@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <a-result status="404" title="Erreur 404" sub-title="Cette page est introuvable ... :-/">
       <template #extra>
         <a-button type="primary">

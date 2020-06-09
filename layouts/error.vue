@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <a-result :status="error.statusCode" :title="error.statusCode" :sub-title="error.message">
       <template #extra>
         <a-button type="primary">
