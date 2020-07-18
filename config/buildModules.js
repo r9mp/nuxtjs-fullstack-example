@@ -12,9 +12,9 @@ export default [
     '@nuxtjs/moment',
     {
       defaultLocale: 'fr',
-      locales: ['fr'],
-    },
+      locales: ['fr']
+    }
   ],
   // Doc: https://github.com/nuxt-community/dotenv-module
-  ['@nuxtjs/dotenv', { filename: '.env' }],
+  ['@nuxtjs/dotenv', { path: '.', filename: '.env' }]
 ]

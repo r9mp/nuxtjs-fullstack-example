@@ -20,5 +20,5 @@ export default [
   // https://github.com/nuxt-community/nuxt-i18n
   'nuxt-i18n',
   // ['@nuxtjs/robots', robots],
-  '@nuxtjs/sitemap',
+  '@nuxtjs/sitemap'
 ]

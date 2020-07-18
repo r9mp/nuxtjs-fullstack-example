@@ -23,16 +23,16 @@ export default {
     presets({ envName }) {
       const envTargets = {
         client: { browsers: ['last 2 versions'], ie: 9 },
-        server: { node: 12 },
+        server: { node: 12 }
       }
       return [
         [
           '@nuxt/babel-preset-app',
           {
-            targets: envTargets[envName],
-          },
-        ],
+            targets: envTargets[envName]
+          }
+        ]
       ]
-    },
-  },
+    }
+  }
 }

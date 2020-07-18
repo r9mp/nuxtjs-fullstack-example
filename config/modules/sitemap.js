@@ -10,7 +10,7 @@ export default {
   filter({ routes }) {
     return routes.map((route) => {
       route.url = `${route.url}`
-      console.log(route, route.name)
+      // console.log(route, route.name)
       if (route.name.startsWith('index')) {
         route.priority = 1
         route.changefreq = 'daily'
@@ -21,6 +21,6 @@ export default {
   },
   i18n: {
     defaultLocale: 'fr',
-    routesNameSeparator: '___',
-  },
+    routesNameSeparator: '___'
+  }
 }

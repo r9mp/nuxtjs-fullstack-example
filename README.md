@@ -42,10 +42,9 @@ AUTH0_AUDIENCE=# Example: https://nuxt-js.eu.auth0.com/api/v2/
 
 ### Auth0
 
-First, create a tenant at [Auth0](https://auth0.com/). Then, create an application (Regular Web Application) and specify AUTH_* environment variables in .env file.
+First, create a tenant at [Auth0](https://auth0.com/). Then, create an application (Regular Web Application) and specify AUTH\_\* environment variables in .env file.
 
 [More info here](https://github.com/nuxt/example-auth0) about the application configuration.
-
 
 ### Database
 
@@ -53,12 +52,13 @@ The backend uses Knex.js.
 
 Create a database named llama with a user named llama (password llama). [Llamas are cool](https://www.google.com/search?q=llamas+are+cool&client=ubuntu&hs=lQZ&channel=fs&sxsrf=ALeKk01zsVfskwVjzpVteAVe606DN-oXHw:1591200887270&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjznZudhebpAhVFxIUKHWNYChEQ_AUoAXoECA4QAw&biw=1853&bih=922).
 
-If you want to change this wonderful name, update DB_* environment variables in .env file ; AND update defaults values in knexfile.js lines 4 to 6 (used for knex migrations):
+If you want to change this wonderful name, update DB\_\* environment variables in .env file ; AND update defaults values in knexfile.js lines 4 to 6 (used for knex migrations):
+
 ```javascript
 const connection = {
   database: process.env.DB_NAME || '<DEFAULT_VALUE>',
   user: process.env.DB_USER || '<DEFAULT_VALUE>',
-  password: process.env.DB_PASSWORD || '<DEFAULT_VALUE>',
+  password: process.env.DB_PASSWORD || '<DEFAULT_VALUE>'
 }
 ```
 
@@ -77,6 +77,7 @@ $ yarn add mssql
 ```
 
 update DB_CLIENT environment variable in .env file AND update default client in knexfile.js (line 9).
+
 ```javascript
 const client = process.env.DB_CLIENT || '<DEFAULT_VALUE>'
 ```
@@ -99,7 +100,7 @@ Add the local dns `fullstack-example.nuxtjs.com`.
 $ sudo vi /etc/hosts
 ```
 
-Example: `127.0.0.1       localhost fullstack-example.nuxtjs.com`
+Example: `127.0.0.1 localhost fullstack-example.nuxtjs.com`
 
 If you want to change the local dns name, don't forget to edit BASE_URL environment variable in .env file.
 
@@ -119,9 +120,11 @@ $ yarn build && yarn start
 ## Used dependencies
 
 Core:
+
 - [Nuxt.js](https://nuxtjs.org): the intuitive vue framework. In this repo, used with SSR and to connect express as a server middleware.
 
 Front-end:
+
 - [Nuxt i18n](https://github.com/nuxt-community/nuxt-i18n): i18n for your Nuxt project (translations).
 - [Nuxt Axios module](https://github.com/nuxt-community/axios-module/): secure and Easy Axios integration with Nuxt.js.
 - [Nuxt Auth module (Auth0 config)](https://auth.nuxtjs.org/): Zero-boilerplate authentication support for Nuxt.js.
@@ -140,6 +143,7 @@ Front-end:
 - [node-sass](https://github.com/sass/node-sass): node.js bindings to libsass.
 
 Back-end:
+
 - [Express.js](https://expressjs.com/): fast, unopinionated, minimalist web framework for Node.js.
 - [Express CORS middleware](https://expressjs.com/en/resources/middleware/cors.html): enables CORS.
 - [Knex.js](http://knexjs.org/): query builder.
@@ -147,9 +151,9 @@ Back-end:
 - [Hapi - Joy](https://hapi.dev/module/joi/): data validation.
 
 Tests:
+
 - [Cypress - E2E](https://www.cypress.io/)
 - [Jest - UT](https://jestjs.io/)
-
 
 ## Dependencies configuration
 
@@ -168,6 +172,7 @@ In both cases, if you do not use a sitemap, don't forget to remove it from the r
 You can find in Nuxt.js FAQ [lot's of deployments methods](https://nuxtjs.org/faq/deployment-aws-s3-cloudfront). Some of them are for generated apps.
 
 ### PM2 - Deploy on your server/VM!
+
 PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks. [More information!](https://github.com/Unitech/pm2)
 
 ```bash
@@ -183,19 +188,20 @@ More information about the ecosystem file [here](https://pm2.keymetrics.io/docs/
 
 Copy / Paste the `deploy-app-engine.yaml` configuration file in your repository.
 
-Deploy it: `gcloud app deploy deploy-app-engine  --project [project-id]`
+Deploy it: `gcloud app deploy deploy-app-engine --project [project-id]`
 
 [More information (Nuxt)](https://nuxtjs.org/faq/appengine-deployment).
 
 ### Google Cloud Platform - Container Engine
 
-TODO: yaml service 
+TODO: yaml service
 
 With and without Nginx as reverse proxy -> https://nuxtjs.org/faq/nginx-proxy
 
 ## Awesome repositories
 
 To find nice dependencies, don't forget to check these repositories:
+
 - [Awesome Nuxt.js](https://github.com/nuxt-community/awesome-nuxt): a curated list of awesome things related to Nuxt.js.
 - [Nuxt Community](https://github.com/nuxt-community/): modules & Projects from Nuxt.js Community.
 - [Awesome Vue.js](https://github.com/vuejs/awesome-vue): a curated list of awesome things related to Vue.js.
@@ -209,7 +215,6 @@ To find nice dependencies, don't forget to check these repositories:
 [Bulletproof node.js project architecture](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf), Sam Quinn
 
 And lot's others!
-
 
 ## License
 

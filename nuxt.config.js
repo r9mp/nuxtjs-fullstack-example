@@ -25,6 +25,7 @@ if (envFound.error) {
 
 export default {
   mode: 'universal',
+  srcDir: 'src/client/',
   head,
   loading,
   css,
@@ -39,5 +40,5 @@ export default {
   // global modules configuration
   auth,
   i18n,
-  sitemap,
+  sitemap
 }

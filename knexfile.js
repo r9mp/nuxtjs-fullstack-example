@@ -3,17 +3,17 @@
 const connection = {
   database: process.env.DB_NAME || 'llama',
   user: process.env.DB_USER || 'llama',
-  password: process.env.DB_PASSWORD || 'llama',
+  password: process.env.DB_PASSWORD || 'llama'
 }
 
 const client = process.env.DB_CLIENT || 'postgres'
 
 const migrations = {
   directory: './api/db/migrations',
-  tableName: 'knex_migrations',
+  tableName: 'knex_migrations'
 }
 const seeds = {
-  directory: './api/db/seeds',
+  directory: './api/db/seeds'
 }
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
     client,
     connection,
     migrations,
-    seeds,
+    seeds
   },
   staging: {
     client,
@@ -30,8 +30,8 @@ module.exports = {
     seeds,
     pool: {
       min: 1,
-      max: 2,
-    },
+      max: 2
+    }
   },
   iso: {
     client,
@@ -40,8 +40,8 @@ module.exports = {
     seeds,
     pool: {
       min: 2,
-      max: 10,
-    },
+      max: 10
+    }
   },
   production: {
     client,
@@ -50,7 +50,7 @@ module.exports = {
     seeds,
     pool: {
       min: 2,
-      max: 10,
-    },
-  },
+      max: 10
+    }
+  }
 }

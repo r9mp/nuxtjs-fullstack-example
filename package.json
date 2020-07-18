@@ -28,7 +28,7 @@
     "start": "nuxt start",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "cy:open": "cypress open"
+    "cy:open": "src/cypress open"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",

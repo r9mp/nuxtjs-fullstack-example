@@ -11,15 +11,15 @@ export default {
       name: 'error',
       message: 'Oops... Something went wrong!',
       options: {
-        type: 'error',
-      },
+        type: 'error'
+      }
     },
     {
       name: 'success',
       message: 'Done... Something went well!',
       options: {
-        type: 'success',
-      },
-    },
-  ],
+        type: 'success'
+      }
+    }
+  ]
 }

@@ -8,114 +8,114 @@ require('dotenv').config()
 export default [
   {
     UserAgent: 'UbiCrawler',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'DOC',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Zao',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'sitecheck.internetseer.com',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Zealbot',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'MSIECrawler',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'SiteSnagger',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'WebStripper',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'WebCopier',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Fetch',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Offline Explorer',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Teleport',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'TeleportPro',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'WebZIP',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'linko',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'HTTrack',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Microsoft.URL.Control',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Xenu',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'larbin',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'libwww',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'ZyBORG',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'Download Ninja',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'wget',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'grub-client',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'k2spider',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'NPBot',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: 'WebReaper',
-    Disallow: '/',
+    Disallow: '/'
   },
   {
     UserAgent: '*',
-    Sitemap: process.env.BASE_URL + '/sitemap.xml',
-  },
+    Sitemap: process.env.BASE_URL + '/sitemap.xml'
+  }
 ]
